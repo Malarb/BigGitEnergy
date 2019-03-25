@@ -4,3 +4,5 @@ Ideas:
   Store all messages as images in the database so you can't really use any SQL injection
   Either use the drawing app or just take a picture of the textbox when the message is entered
   
+https://stackoverflow.com/questions/6472233/can-i-store-images-in-mysql
+--> LONGBLOB is the data type for an image
