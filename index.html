@@ -1,0 +1,80 @@
+<!-- A bare bones web page to start SY306 assignments with -->
+<!-- Lab03 -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>The Unhackable Message Board</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+     <div class="grid-container">
+
+       <!-- Header -->
+       <div class="item1">
+         <h6>Welcome to</h6>
+         <h1>The Unhackable Message Board</h1>
+         <h6> Sörry hackers </h6>
+         <img src="https://i.pinimg.com/originals/67/cf/12/67cf12cd5e9345b440a9ad8836f22db9.jpg" alt="Canada">
+       </div>
+
+       <!-- Left Menu -->
+       <div class="item2">
+         <ul id="navbar">
+           <li> <a class="active" href="index.html">Message Board</a> </li>
+           <li> <a href="login.html">Log In</a> </li>
+           <li> <a href="signup.html">Sign Up</a> </li>
+         </ul>
+       </div>
+
+       <!-- Main | Basic info about the website-->
+       <div class="item3">
+
+         <h3 id="greeting" style="text-align:center;">Hello!</h3>
+         <!-- Script that will change the greeting based on if it is an odd or even minute -->
+         <script>
+          // Get current minute
+          var d = new Date().getMinutes();
+          var greeting;
+          // If minute is odd or even determine greeting
+          if (d % 2 == 0) {
+            greeting = "alert(beware of cyber attack)!";
+          } else {
+            greeting = "DOWN WITH COOKIES!";
+          }
+          // Change the greeting header
+          document.getElementById("greeting").innerHTML = greeting;
+         </script>
+
+         <h3 title="Down with asparagus" style="text-align:center;"> Message Board cookies are delicious</h3>
+
+       </div>
+
+       <!-- Footer | Sign up-->
+       <div class="item4">
+         <p style="text-align:center;">Please do not alert the (document.cookie)s.</p>
+       </div>
+     </div>
+
+
+      <!-- ***************************************************************
+         Below this point is text you should include on every SY306 page
+         *************************************************************** -->
+      <!-- Below are scripts which create a button you can click on to validate your page.
+           The background will load green or red if the HTML is valid or not.
+           The time at which the page was last modified will also be displayed below the button -->
+
+
+      <link href="http://courses.cyber.usna.edu/SY306/docs/check.css" rel="stylesheet">
+
+      <script>
+        document.write('<div id="response"><a href="http://csmidn.academy.usna.edu:8888/?showsource=yes&doc=' + document.location + '">' +
+                   '<img src="http://courses.cyber.usna.edu/SY306/docs/check.py"' + 'alt="HTML Check" height="60" />' +
+                   '</a><div id="time"></div></div>');
+      </script>
+      <script src="http://courses.cyber.usna.edu/SY306/docs/time.js" ></script>
+
+
+
+   </body>
+</html>

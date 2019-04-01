@@ -1,0 +1,108 @@
+/* Importing a google font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.item1 /* Header */ {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 6;
+  padding: 20px;
+  color: black;
+}
+
+.item2 /* Menu-Bar with Log in and Sign Up*/ {
+  grid-area: 2 / 1 / 3 / 6;
+  background-color: tomato;
+  padding: 10px;
+}
+
+.item3 /* Main */ {
+  grid-area: 3 / 1 / 4 / 6;
+  /*background-color: rgba(255, 255, 255, 0.30);*/
+  padding: 20px;
+  background-color: white;
+  border: 10px solid tomato;
+}
+
+.item4 /* Footer */ {
+  grid-area: 4 / 1 / 5 / 6;
+  background-color: tomato;
+  font-family: 'Roboto Slab';
+  padding: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+td {
+  text-align: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Roboto Slab';
+}
+
+h6 {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Roboto Slab';
+}
+
+body {
+
+background-color: lightskyblue;
+/*  background-color: #5b9aff;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111111;
+}
+
+li {
+  float: left;
+  position: sticky;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #222222;
+}
+
+.active {
+  background-color: #3c3c3c;
+}
